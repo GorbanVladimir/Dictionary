@@ -1,9 +1,9 @@
-let dictionary = ''
+let dictionary = []
 let sentence = document.getElementById('sentence')
 let input = document.getElementById('addWord')
 let search = document.getElementById('searchWord')
 function addTheWord () {
-    dictionary += input.value
+    dictionary.push(input.value)
     input.value = ''
     sentence.innerHTML = '<div class="alert alert-info" role="alert">\n' +
         '  The word was added to the dictionary!\n' +
