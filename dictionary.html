@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card text-center">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Dictionary</h5>
+            <p class="card-text">You can add or search a word in the dictionary</p>
+            <input type="text" id="addWord">
+            <button class="btn btn-success" onclick="addTheWord()">Add word&nbsp;&nbsp;&nbsp;&nbsp;</button><p></p>
+            <input type="text" id="searchWord">
+            <button class="btn btn-primary" onclick="searchTheWord()">Search word</button>
+        </div>
+        <div class="card-footer text-muted" id="sentence">
+        </div>
+    </div>
+<script src="dictionary.js"></script>
+</body>
+</html>
