@@ -2,6 +2,7 @@ let dictionary = []
 let sentence = document.getElementById('sentence')
 let input = document.getElementById('addWord')
 let search = document.getElementById('searchWord')
+
 function addTheWord () {
     dictionary.push(input.value)
     input.value = ''
@@ -9,6 +10,7 @@ function addTheWord () {
         '  The word was added to the dictionary!\n' +
         '</div>'
 }
+
 function searchTheWord () {
     if (dictionary.indexOf(search.value) >= 0) {
         sentence.innerHTML = '<div class="alert alert-success" role="alert">\n' +
